@@ -1,0 +1,17 @@
+vim.g.encoding = "UTF-8"
+vim.o.fileencoding = 'utf-8'
+vim.wo.number = true
+vim.wo.cursorline = true
+vim.wo.signcolumn = "yes"
+vim.wo.colorcolumn = "80"
+vim.o.tabstop = 2
+vim.bo.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftround = true
+vim.o.shiftwidth = 2
+vim.bo.shiftwidth = 2
+vim.o.expandtab = true
+vim.bo.expandtab = true
+vim.o.autoindent = true
+vim.bo.autoindent = true
+vim.o.smartindent = true
