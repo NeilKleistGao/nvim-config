@@ -8,7 +8,7 @@ lua require('plugin-config/bufferline')
 lua require('plugin-config/nvim-treesitter')
 
 
-lua require('lsp/setup')
+lua require('lsp-config')
 
 
 colorscheme nightfox

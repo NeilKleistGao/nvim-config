@@ -7,7 +7,12 @@ return require("packer").startup(function()
   }
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use {'neovim/nvim-lspconfig', 'williamboman/nvim-lsp-installer'}
+  use {'neovim/nvim-lspconfig'}
+  use {
+    'williamboman/mason.nvim',
+    config = function() require('mason').setup() end
+  }
+  use 'williamboman/mason-lspconfig.nvim'
   use {
     'nvimdev/dashboard-nvim',
     event = 'VimEnter',
@@ -17,5 +22,15 @@ return require("packer").startup(function()
       }
     end,
     requires = {'nvim-tree/nvim-web-devicons'}
+  }
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
   }
 end)

@@ -7,3 +7,5 @@ map("n", "<A-Right>", ":BufferLineCycleNext<CR>", opt)
 map("n", "<C-s>", ":w<CR>", opt)
 map("n", "<C-z>", ":undo<CR>", opt)
 
+vim.keymap.set("n", "<C-_>", "gcc", { remap = true, silent = true })
+
