@@ -33,4 +33,12 @@ return require("packer").startup(function()
         require('Comment').setup()
     end
   }
+  use({
+	  "L3MON4D3/LuaSnip",
+	  tag = "v2.4.0", 
+	  run = "make install_jsregexp"
+  })
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end}
 end)

@@ -6,6 +6,7 @@ lua require("keybindings")
 lua require("plugin-config/nvim-tree")
 lua require('plugin-config/bufferline')
 lua require('plugin-config/nvim-treesitter')
+lua require('plugin-config/toggleterm')
 
 
 lua require('lsp-config')
